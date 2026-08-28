@@ -1,13 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pizza-site</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Pizza Shop Name] — Placeholder Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo" aria-label="Brand logo placeholder">Brand</div>
+
+    <div class="title-block">
+      <h1>Pizza (Name)</h1>
+      <p class="tagline">Brief info</p>
+    </div>
+
+    <nav class="site-nav">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Pizzas</a></li>
+        <li><a href="#feature">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="cta-button">Order Now</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="menu" class="section">
+      <h2>Menu</h2>
+      <p class="section-intro">Section intro placeholder</p>
+
+      <div class="filter-pills" id="filter-pills">
+        <button class="pill active" data-filter="all">All</button>
+        <button class="pill" data-filter="classic">Classic</button>
+        <button class="pill" data-filter="vegetarian">Vegetarian</button>
+        <button class="pill" data-filter="spicy">Spicy</button>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- cards injected by menuCard.ts -->
+      </div>
+
+      <button class="cta-button cta-large">View Full Menu</button>
+    </section>
+
+    <section id="story" class="section">
+      <h2>How We Make Our Pizza</h2>
+      <p class="section-intro">Intro text placeholder</p>
+
+      <div class="process-grid" id="process-grid">
+        <!-- steps injected by processStep.ts -->
+      </div>
+
+      <div class="collage" aria-hidden="true">
+        <div class="img-placeholder collage-item collage-1">img</div>
+        <div class="img-placeholder collage-item collage-2">img</div>
+        <div class="img-placeholder collage-item collage-3">img</div>
+      </div>
+    </section>
+
+    <section id="feature" class="section feature-section">
+      <h2>Feature Heading Placeholder</h2>
+      <p class="section-intro">Feature body text placeholder</p>
+      <div class="img-placeholder feature-img">img</div>
+      <button class="cta-button">Feature CTA</button>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-details">
+          <p><strong>Address:</strong> Placeholder address</p>
+          <p><strong>Phone:</strong> Placeholder phone</p>
+          <p><strong>Email:</strong> Placeholder email</p>
+          <p><strong>Hours:</strong> Placeholder hours</p>
+          <div class="social-icons" aria-label="Social media links">
+            <a href="#" aria-label="Instagram placeholder">IG</a>
+            <a href="#" aria-label="Facebook placeholder">FB</a>
+            <a href="#" aria-label="Telegram placeholder">TG</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+
+      <div class="img-placeholder map-placeholder" aria-hidden="true">Map Placeholder</div>
+      <p class="closing-cta">Closing CTA message placeholder</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="logo" aria-label="Brand logo placeholder">Brand</div>
+    <ul class="footer-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our Pizzas</a></li>
