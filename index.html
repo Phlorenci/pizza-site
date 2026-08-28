@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>[Pizza Shop Name] — Placeholder Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <script type="module" src="/src/main.ts"></script>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute">
+  <filter id="rough-edges">
+    <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise" seed="3" />
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+  </filter>
+</svg>
   <header class="site-header">
     <div class="logo" aria-label="Brand logo placeholder">Brand</div>
 

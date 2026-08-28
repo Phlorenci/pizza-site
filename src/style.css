@@ -31,6 +31,31 @@ body {
   line-height: 1.6;
 }
 
+:root {
+  --font-hand: "Caveat", cursive;
+}
+
+.img-placeholder {
+  font-family: var(--font-hand);
+  font-size: 1.4rem;
+}
+
+.menu-card:nth-child(3n+1) { transform: rotate(-1deg); }
+.menu-card:nth-child(3n+2) { transform: rotate(0.5deg); }
+.menu-card:nth-child(3n)   { transform: rotate(-0.5deg); }
+.menu-card:hover { transform: rotate(0deg) translateY(-6px); }
+
+.menu-card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid var(--color-text);
+  border-radius: var(--radius-blob);
+  filter: url(#rough-edges);
+  margin-bottom: 16px;
+  display: block;
+}
+
 h1, h2, h3 {
   font-family: var(--font-heading);
   color: var(--color-heading);
@@ -312,6 +337,7 @@ button {
   color: #FFF8EC;
   text-align: center;
   max-width: calc(var(--max-width) - 48px);
+  margin: 0 auto;
 }
 .feature-section h2 { color: var(--color-heading); }
 .feature-section p { color: #E9DFCB; }

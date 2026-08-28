@@ -5,18 +5,19 @@ export interface PizzaItem {
   price: string;
   label?: string;
   category: "classic" | "vegetarian" | "spicy";
+  imageUrl?: string;
 }
 
 export const placeholderPizzas: PizzaItem[] = [
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", label: "Label", category: "classic" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", category: "vegetarian" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", label: "Label", category: "spicy" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", category: "classic" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", label: "Label", category: "vegetarian" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", category: "spicy" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", category: "classic" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", label: "Label", category: "vegetarian" },
-  { name: "Pizza Name", description: "Description", ingredients: "Ingredients", price: "Price", category: "spicy" },
+  { name: "Margherita", description: "Description", ingredients: "Sauce, Mozzarella cheese and Fresh Basil", price: "Price", label: "Label", category: "classic", imageUrl: "/images/pizzas/margherita.jpg" },
+  { name: "Pepperoni", description: "Description", ingredients: "Sauce, Mozzarella cheese and Pepperoni", price: "Price", category: "classic", imageUrl: "/images/pizzas/pepperoni.jpg" },
+  { name: "Meat Mania", description: "Description", ingredients: "Sauce, Mozzarella cheese, Pepperoni, Ham, Sausage and Bacon", price: "Price", label: "Label", category: "spicy", imageUrl: "/images/pizzas/meat-mania.jpg" },
+  { name: "Hawaiian", description: "Description", ingredients: "Sauce, Mozzarella cheese, Pineapple, Sausage and Bacon", price: "Price", category: "classic", imageUrl: "/images/pizzas/hawaiian.jpg" },
+  { name: "Gorgonzola", description: "Description", ingredients: "Mozzarella and Gorgonzola cheese", price: "Price", label: "Label", category: "classic", imageUrl: "/images/pizzas/gorgonzola.jpg" },
+  { name: "Mushroom", description: "Description", ingredients: "Sauce, Mozzarella cheese, Black olives, Onion and Mushrooms", price: "Price", category: "vegetarian", imageUrl: "/images/pizzas/mushroom.jpg" },
+  { name: "SpecialCombination", description: "Description", ingredients: "Sauce, Mozzarella cheese, Pepperoni, Ham, Sausage, Bacon, onion, black olives and capsicum", price: "Price", label: "Label", category: "classic", imageUrl: "/images/pizzas/special-combination.jpg" },
+  { name: "Rucola", description: "Description", ingredients: "Sauce, Mozzarella cheese and Rucola ", price: "Price", label: "Label", category: "vegetarian", imageUrl: "/images/pizzas/rucola.jpg" },
+  { name: "Deep cheese", description: "Description", ingredients: "Sauce, Mozzarella cheese 3x", price: "Price", category: "classic", imageUrl: "/images/pizzas/deep-cheese.jpg" },
 ];
 
 export interface ProcessStep {

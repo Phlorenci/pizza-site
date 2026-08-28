@@ -5,8 +5,12 @@ export function createMenuCard(item: PizzaItem): HTMLElement {
   card.className = "menu-card reveal";
   card.dataset.category = item.category;
 
+  const imageMarkup = item.imageUrl
+    ? `<img class="menu-card-img" src="${item.imageUrl}" alt="${item.name}" loading="lazy" />`
+    : `<div class="img-placeholder" aria-hidden="true">img</div>`;
+
   card.innerHTML = `
-    <div class="img-placeholder" aria-hidden="true">img</div>
+    ${imageMarkup}
     <h3>${item.name}</h3>
     <p class="description">${item.description}</p>
     <p class="ingredients">${item.ingredients}</p>
