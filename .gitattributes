@@ -1,0 +1,3 @@
+public/** linguist-vendored
+*.md linguist-documentation
+package-lock.json linguist-generated
