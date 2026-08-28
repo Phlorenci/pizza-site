@@ -33,6 +33,7 @@ body {
 
 :root {
   --font-hand: "Caveat", cursive;
+  --transition-fast: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
 }
 
 .img-placeholder {
