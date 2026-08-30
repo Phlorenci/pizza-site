@@ -195,3 +195,16 @@ button { font-family: var(--font-body); cursor: pointer; border: none; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+.menu-search { display: flex; justify-content: center; margin-bottom: 24px; }
+.menu-search-input {
+  width: 100%; max-width: 420px; font-family: var(--font-body); font-size: 0.95rem;
+  padding: 10px 18px; border: 2px solid var(--color-accent); border-radius: 999px;
+  background: var(--color-bg-alt); color: var(--color-text);
+}
+.menu-search-input:focus { outline: none; border-color: var(--color-accent-dark); }
+.menu-no-results { text-align: center; color: var(--color-text-muted); font-style: italic; margin-top: 20px; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}

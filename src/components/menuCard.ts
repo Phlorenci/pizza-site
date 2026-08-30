@@ -4,6 +4,9 @@ export function createMenuCard(item: PizzaItem): HTMLElement {
   const card = document.createElement("article");
   card.className = "menu-card reveal";
   card.dataset.category = item.category;
+  card.dataset.name = item.name;
+  card.dataset.description = item.description;
+  card.dataset.ingredients = item.ingredients;
 
   const resolvedImageUrl = item.imageUrl
     ? `${import.meta.env.BASE_URL}${item.imageUrl}`

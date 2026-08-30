@@ -42,6 +42,15 @@
       <h2>Menu</h2>
       <p class="section-intro">Section intro placeholder</p>
 
+      <div class="menu-search">
+        <label for="menu-search-input" class="visually-hidden">Search the menu</label>
+        <input
+        type="search"
+        id="menu-search-input"
+        class="menu-search-input"
+        placeholder="Search pizzas by name or ingredient..."/>
+      </div>
+
       <div class="filter-pills" id="filter-pills">
         <button class="pill active" data-filter="all">All</button>
         <button class="pill" data-filter="classic">Classic</button>
@@ -50,7 +59,9 @@
       </div>
 
       <div class="menu-grid" id="menu-grid">
+        <p id="menu-no-results" class="menu-no-results" hidden>No pizzas match your search.</p>
         <!-- cards injected by menuCard.ts -->
+         
       </div>
 
       <button class="cta-button cta-large">View Full Menu</button>

@@ -3,9 +3,9 @@ import { placeholderPizzas, placeholderProcessSteps } from "./data/placeholderDa
 import { createMenuCard } from "./components/menuCard";
 import { createProcessStep } from "./components/processStep";
 import { initNav } from "./components/nav";
-import { initFilterPills } from "./components/filterPills";
 import { initScrollReveal } from "./components/scrollReveal";
 import { initContactForm } from "./components/contactForm";
+import { initMenuFilters } from "./components/filterPills";
 
 function renderMenu(): void {
   const grid = document.getElementById("menu-grid");
@@ -23,7 +23,7 @@ function init(): void {
   renderMenu();
   renderProcessSteps();
   initNav();
-  initFilterPills();
+  initMenuFilters();
   initContactForm();
   initScrollReveal(); // call last, after all .reveal elements exist in the DOM
 }
