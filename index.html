@@ -6,8 +6,8 @@
   <title>[Pizza Shop Name] — Placeholder Site</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/pizza-site/assets/index-BRpmOY1K.js"></script>
-  <link rel="stylesheet" crossorigin href="/pizza-site/assets/index-CrUREqAc.css">
+  <script type="module" crossorigin src="/pizza-site/assets/index-CxtJwLrp.js"></script>
+  <link rel="stylesheet" crossorigin href="/pizza-site/assets/index-D_FG7h7U.css">
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute">
@@ -43,6 +43,15 @@
       <h2>Menu</h2>
       <p class="section-intro">Section intro placeholder</p>
 
+      <div class="menu-search">
+        <label for="menu-search-input" class="visually-hidden">Search the menu</label>
+        <input
+        type="search"
+        id="menu-search-input"
+        class="menu-search-input"
+        placeholder="Search pizzas by name or ingredient..."/>
+      </div>
+
       <div class="filter-pills" id="filter-pills">
         <button class="pill active" data-filter="all">All</button>
         <button class="pill" data-filter="classic">Classic</button>
@@ -51,7 +60,9 @@
       </div>
 
       <div class="menu-grid" id="menu-grid">
+        <p id="menu-no-results" class="menu-no-results" hidden>No pizzas match your search.</p>
         <!-- cards injected by menuCard.ts -->
+         
       </div>
 
       <button class="cta-button cta-large">View Full Menu</button>
